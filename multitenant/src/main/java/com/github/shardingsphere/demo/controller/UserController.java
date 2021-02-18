@@ -17,11 +17,6 @@ import java.util.List;
 import java.util.Random;
 
 
-/**
- * @author xub
- * @Description: 接口测试
- * @date 2019/8/24 下午6:31
- */
 @RestController
 public class UserController {
 
