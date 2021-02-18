@@ -17,9 +17,10 @@ public class OrderController {
     private OrderService orderService;
 
     @GetMapping("create-order")
-    public void createOrder() {
-        List<String> merchantList = Lists.newArrayList("aliyun", "taobao", "tmall");
-        for (int i = 0; i < 10; i++) {
+    public String createOrder() {
+        List<String> merchantList = Lists.newArrayList("aliyun", "taobao", "tmall",
+                "jd", "pdd", "wangyi", "yhd", "suning", "meituan");
+        for (int i = 0; i < 50; i++) {
             Order order = new Order();
             order.setUserId(i);
             order.setOrderNo(System.currentTimeMillis() + String.format("%06d", i));
@@ -27,6 +28,7 @@ public class OrderController {
             order.setMerchant(merchantList.get(new Random().nextInt(merchantList.size())));
             orderService.save(order);
         }
+        return "ok";
     }
 
     @GetMapping("list-order")

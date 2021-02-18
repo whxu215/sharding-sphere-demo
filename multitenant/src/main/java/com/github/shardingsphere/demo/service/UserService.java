@@ -17,6 +17,8 @@ public interface UserService {
      */
     List<User>  list();
 
+    User  getUserById(Integer id);
+
     /**
      *   批量 保存用户信息
      * @param userVOList

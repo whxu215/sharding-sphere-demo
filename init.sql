@@ -26,6 +26,50 @@ CREATE TABLE `tb_order` (
   UNIQUE KEY `uk_order_no` (`order_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
+-- Create syntax for TABLE 'tb_order0'
+CREATE TABLE `tb_order0` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order1'
+CREATE TABLE `tb_order1` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order2'
+CREATE TABLE `tb_order2` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order3'
+CREATE TABLE `tb_order3` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
 
 use ds1;
 DROP TABLE IF EXISTS `tab_user`;
@@ -51,3 +95,47 @@ CREATE TABLE `tb_order` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uk_order_no` (`order_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order0'
+CREATE TABLE `tb_order0` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order1'
+CREATE TABLE `tb_order1` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order2'
+CREATE TABLE `tb_order2` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- Create syntax for TABLE 'tb_order3'
+CREATE TABLE `tb_order3` (
+`id` int(11) NOT NULL AUTO_INCREMENT,
+`user_id` int(11) NOT NULL COMMENT '姓名',
+`order_no` varchar(32) NOT NULL COMMENT '订单号',
+`order_time` datetime NOT NULL COMMENT '订单时间',
+`merchant` varchar(16) NOT NULL COMMENT '商户名称',
+PRIMARY KEY (`id`),
+UNIQUE KEY `uk_order_no` (`order_no`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;

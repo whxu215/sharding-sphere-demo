@@ -18,6 +18,11 @@
     <include refid="Base_Column_List" />
     from tab_user order by age
   </select>
+  <select id="getUserById" parameterType="java.lang.Integer"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tab_user where id=#{id,jdbcType=INTEGER}
+  </select>
 
   <insert id="insertForeach" parameterType="java.util.List" useGeneratedKeys="false">
     insert into tab_user (id, name, sex,

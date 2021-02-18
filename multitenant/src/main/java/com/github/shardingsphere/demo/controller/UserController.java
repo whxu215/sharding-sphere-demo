@@ -8,6 +8,7 @@ import com.github.shardingsphere.demo.entity.User;
 import org.apache.shardingsphere.api.hint.HintManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -66,6 +67,15 @@ public class UserController {
         } finally {
             hintManager.close();
         }
+    }
+
+    /**
+     * @Description: 获取用户列表
+     */
+    @GetMapping("list-user/{id}")
+    public Object listUserById(@PathVariable Integer id) {
+        DbLocator.setDbName("ds0");
+        return userService.getUserById(id);
     }
 
 

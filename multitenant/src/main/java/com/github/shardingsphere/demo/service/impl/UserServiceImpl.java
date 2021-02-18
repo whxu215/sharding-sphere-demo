@@ -28,6 +28,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User getUserById(Integer id) {
+        return userMapper.getUserById(id);
+    }
+
+    @Override
     public String insertForeach(List<User> userList) {
         for (User user : userList) {
             user.setCreateTime(new Date());
